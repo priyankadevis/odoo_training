@@ -1,0 +1,11 @@
+<odoo>
+<record model="ir.actions.act_window" id="type_student_action_window">
+    <field name="name">Student</field>
+    <field name="res_model">type.student</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem name="Sakthi_institude" id="sakthi_institude_menu_root"/>
+<menuitem name="Student" id="sakthi_institute_student" parent="sakthi_institude__menu_root"
+          action="type_student_action_window"/>
+</odoo>
