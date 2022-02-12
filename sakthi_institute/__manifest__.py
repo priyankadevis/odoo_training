@@ -1,11 +1,8 @@
+# -*- coding: utf-8 -*-
 {
-    'name': "Sakthi Institute",
-    'summary': """
-        Sakthi Institute summary of the module's purpose, used as
-        subtitle on modules listing""",
-    'description': """
-        Long description of module's purpose
-    """,
+    'name': ' Sakthi Institute ',
+    'summary': ' type institute software ',
+    'description': """ type institute software  """,
     'author': "My Company",
     'website': "http://www.yourcompany.com",
     'category': 'Uncategorized',
@@ -13,12 +10,9 @@
     'depends': [
         'base',
         'crm',
-        'hr',
-    ],
+        'hr', ],
     'data': [
-        'security/ir.model.access.csv',
         'views/student.xml',
-
     ],
     'license': 'LGPL-3',
     'application': True,
