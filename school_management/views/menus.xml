@@ -5,4 +5,13 @@
               action="school_management_school_student_action_window"/>
     <menuitem name="College Student" id="school_management_teacher_students" parent="school_management_students"
               action="school_management_college_student_action_window"/>
+
+    <menuitem name="Departments" id="college_management_departments" parent="school_management_menu_root"
+              action="college_department_action_window"/>
+    <menuitem name="Teacher" id="school_teacher" parent="school_management_menu_root"
+              action="school_teacher_action_window"/>
+    <menuitem name="Parents" id="school_management_parents" parent="school_management_menu_root"
+              action="school_management_parent_action_window"/>
+    <menuitem name="Staff" id="school_management_staff" parent="school_management_menu_root"
+              action="school_management_staff_action_window"/>
 </odoo>

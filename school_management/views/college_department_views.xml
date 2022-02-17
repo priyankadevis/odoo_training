@@ -49,6 +49,4 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Departments" id="college_management_departments" parent="school_management_menu_root"
-              action="college_department_action_window"/>
 </odoo>
