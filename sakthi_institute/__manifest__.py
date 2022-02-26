@@ -17,8 +17,10 @@
         'hr',
     ],
     'data': [
+        'data/ir_sequence_data.xml',
         'security/ir.model.access.csv',
         'views/student.xml',
+        'views/student_fee.xml',
     ],
     'license': 'LGPL-3',
     'application': True,
