@@ -65,7 +65,10 @@
     'data': [
         'security/ir.model.access.csv',
         'views/agriculture_crop_views.xml',
+        'views/farmer.xml',
         'views/templates.xml',
+        'views/crop_material.xml',
+        'views/menus.xml',
     ],
     'application': True,
     'license': 'LGPL-3',

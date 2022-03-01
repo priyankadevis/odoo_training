@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 agri_management.access_agriculture_crop,access_agriculture_crop,agri_management.model_agriculture_crop,base.group_user,1,1,1,1
+agri_management.access_farmer_registration,access_farmer_registration,agri_management.model_farmer_registration,base.group_user,1,1,1,1
+agri_management.access_crop_material,access_crop_material,agri_management.model_crop_material,,1,1,1,1

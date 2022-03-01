@@ -1,0 +1,31 @@
+<odoo>
+    <record model="ir.ui.view" id="farmer_registration_form">
+        <field name="name">Farmer Registration form</field>
+        <field name="model">farmer.registration</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="mobile"/>
+                        </group>
+                        <group>
+                            <field name="address"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="farmer_registration_action_window">
+        <field name="name">farmers</field>
+        <field name="res_model">farmer.registration</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--    <menuitem name="Agri" id="agri_management_menu_root"/>-->
+    <!--    <menuitem name="farmers" id="agriculture_management_registration" parent="agri_management_menu_root"-->
+    <!--              action="farmer_registration_action_window"/>-->
+</odoo>

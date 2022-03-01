@@ -6,7 +6,7 @@
             <tree>
                 <field name="crop_name"/>
                 <field name="crop_season"/>
-                <field name="crop_warehouse"/>
+                <!--                <field name="crop_warehouse"/>-->
                 <field name="crop_stock_location"/>
             </tree>
         </field>
@@ -18,23 +18,44 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <div class="oe_title">
+                        <!--                        <span class="o_form_label" attrs="{'invisible': [('state','not in',('draft','sent'))]}">Request for Quotation </span>-->
+                        <h1>
+                            <field name="crop_name"/>
+                        </h1>
+                    </div>
                     <group>
-                        <field name="crop_name"/>
-                        <field name="crop_season"/>
-                        <field name="period_to_produce"/>
+                        <group>
+                            <field name="crop_season"/>
+                            <field name="period_to_produce"/>
+                        </group>
+                        <group>
+                            <field name="starting_period"/>
+                            <field name="ending_period"/>
+                        </group>
                     </group>
                     <notebook>
-                        <page string="process limit">
+                        <page string="crop material">
                             <group>
-                                <field name= "starting_period"/>
-                                <field name= "ending_period"/>
+                                <!--                                <field name="material_id" string="material"/>-->
+                                <field name="material_id"/>
                             </group>
                         </page>
-                        <page string="location"/>
+                        <page string="Warehouse">
+                            <group>
+                                <field name="crop_stock_location"/>
+                            </group>
+                        </page>
                         <page string="disease">
-                        <group>
-                            <field name="disease_cure"/>
-                        </group>
+                            <group>
+                                <group>
+                                    <field name="disease"/>
+                                    <field name="disease_cure"/>
+                                </group>
+                                <group>
+                                    <field name="description" widget="text"/>
+                                </group>
+                            </group>
                         </page>
                     </notebook>
                 </sheet>

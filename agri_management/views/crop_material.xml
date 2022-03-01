@@ -1,0 +1,40 @@
+<odoo>
+    <record model="ir.ui.view" id="crop_material_list">
+    <field name="name">Crop Material list</field>
+    <field name="model">crop.material</field>
+    <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="qty"/>
+                <field name="uom"/>
+            </tree>
+    </field>
+    </record>
+    <record model="ir.ui.view" id="crop_material_form">
+        <field name="name">Crop Material form</field>
+        <field name="model">crop.material</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="qty"/>
+                            <field name="uom"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="crop_material_action_window">
+        <field name="name">Material</field>
+        <field name="res_model">crop.material</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--    <menuitem name="Agri" id="agri_management_menu_root"/>-->
+    <!--    <menuitem name="farmers" id="agriculture_management_registration" parent="agri_management_menu_root"-->
+    <!--              action="farmer_registration_action_window"/>-->
+</odoo>

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
-
+# -*- coding: utf-8 -*
 from . import agriculture_crop
-from . import models
+from . import farmer
