@@ -1,6 +1,6 @@
 <odoo>
-    <menuitem name="Agri" id="agri_management_menu_root"/>
+    <menuitem name="Agri Management" id="agri_management_menu_root"/>
     <menuitem name="configuration" id="agri_management_configuration" parent="agri_management_menu_root"/>
-    <menuitem name="farmers" id="agriculture_management_farmers" parent="agri_management_menu_root"
+    <menuitem name="Farmers" id="agriculture_management_farmers" parent="agri_management_menu_root"
               action="farmer_registration_action_window"/>
 </odoo>
