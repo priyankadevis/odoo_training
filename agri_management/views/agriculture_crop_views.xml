@@ -38,7 +38,7 @@
                         <page string="crop material">
                             <group>
                                 <!--                                <field name="material_id" string="material"/>-->
-                                <field name="material_id"/>
+                                <field name="material_ids"/>
                             </group>
                         </page>
                         <page string="Warehouse">
