@@ -18,7 +18,7 @@ class AgricultureCrop(models.Model):
     disease = fields.Char()
     disease_cure = fields.Char()
     description = fields.Char()
-    material_id = fields.Many2one('crop.material')
+    material_ids = fields.One2many('crop.material', 'agriculture_crop_id')
 
 
 
@@ -38,8 +38,8 @@ class AgricultureCrop(models.Model):
          _name = 'crop.material'
          _description = 'Crop Material'
 
-         name=fields.Char(string="product")
-         qty=fields.Integer(string="quantity")
-         uom=fields.Char(string="unit of measures")
-         # agriculture_crop_id = fields.Many2one('agriculture.crop', string="crop")
+         name=fields.Char(string="Product")
+         qty=fields.Integer(string="Quantity")
+         uom=fields.Char(string="Unit Of Measures")
+         agriculture_crop_id = fields.Many2one('agriculture.crop', string="crop")
 
