@@ -12,6 +12,10 @@ class FarmerRegistration(models.Model):
     nature_cultivation = fields.Selection([('natural farming', "Natural Farming"),
                                            ('organic farming', "Organic Farming"),
                                            ('chemical farming', "Chemical Farming")])
+    waste_land = fields.Char(string="Barren (in Acre)")
+    land_location = fields.Selection([('puducherry', "PUDUCHERRY"),
+                                      ('cuddalore', "CUDDALORE"),
+                                      ('villupuram', "VILLUPURAM")])
     mobile = fields.Char()
     address = fields.Text()
 
